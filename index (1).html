@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone Prime - Loja Premium</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #fafafa;
+            color: #222;
+        }
+        header {
+            background: #000;
+            color: #fff;
+            padding: 25px 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #00c3ff;
+        }
+        section {
+            padding: 70px 20px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        p {
+            font-size: 1.1em;
+            color: #555;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .product {
+            background: #fff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        .product h3 {
+            margin-bottom: 10px;
+            color: #000;
+        }
+        .product p {
+            margin-bottom: 10px;
+        }
+        button {
+            background: linear-gradient(90deg, #0070f3, #00c3ff);
+            color: #fff;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.4s;
+        }
+        button:hover {
+            background: linear-gradient(90deg, #005bb5, #0099cc);
+        }
+        footer {
+            background: #000;
+            color: #aaa;
+            padding: 30px 20px;
+            text-align: center;
+            font-size: 0.9em;
+            margin-top: 50px;
+        }
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>iPhone Prime</h1>
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+<section id="sobre">
+    <h2>Sobre Nós</h2>
+    <p>Na iPhone Prime, você encontra os melhores iPhones novos e seminovos, acessórios premium e atendimento personalizado. Faça parte da revolução mobile com quem entende de qualidade!</p>
+</section>
+
+<section id="produtos">
+    <h2>Produtos em Destaque</h2>
+    <div class="products">
+        <div class="product">
+            <h3>iPhone 13</h3>
+            <p>128GB | Cores disponíveis</p>
+            <p><strong>R$ 3.999,00</strong></p>
+            <button>Comprar</button>
+        </div>
+        <div class="product">
+            <h3>iPhone 14 Pro</h3>
+            <p>256GB | Novidade!</p>
+            <p><strong>R$ 6.499,00</strong></p>
+            <button>Comprar</button>
+        </div>
+        <div class="product">
+            <h3>Capinhas Originais</h3>
+            <p>Alta proteção e estilo</p>
+            <p><strong>R$ 149,00</strong></p>
+            <button>Ver Acessórios</button>
+        </div>
+        <div class="product">
+            <h3>Películas Premium</h3>
+            <p>Proteção total para a tela</p>
+            <p><strong>R$ 79,00</strong></p>
+            <button>Ver Acessórios</button>
+        </div>
+    </div>
+</section>
+
+<section id="contato">
+    <h2>Fale Conosco</h2>
+    <p>Tem dúvidas? Nosso time de especialistas está pronto para te atender no WhatsApp!</p>
+    <button onclick="window.location.href='https://wa.me/seunumerodetelefone'">Atendimento Rápido</button>
+</section>
+
+<footer>
+    <p>© 2025 iPhone Prime - Todos os direitos reservados. Desenvolvido com ❤️ para você.</p>
+</footer>
+
+</body>
+</html>
